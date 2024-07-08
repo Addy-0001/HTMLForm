@@ -1,0 +1,66 @@
+/* Code to remove the up and down arrow keys using css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* for mozilla firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* End of code to remove up and down arrow keys.  */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #11235A;
+}
+
+.container {
+    background-color: white;
+    width: 80em;
+    margin-inline: auto;
+    margin-top: 3em;
+    padding: 10px;
+    border: #000000 1px solid;
+    border-radius: 10px;
+}
+
+.container h1 {
+    background-color: #11235A;
+    color: white; 
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    height: 25px;
+    width: 20em; 
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
