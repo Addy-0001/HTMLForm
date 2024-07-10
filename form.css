@@ -31,7 +31,7 @@ body {
 
 .container h1 {
     background-color: #11235A;
-    color: white; 
+    color: white;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -39,14 +39,14 @@ body {
 
 .text-center {
     text-align: center;
-    
+
 }
 
 .w-full {
     width: 100%;
 }
 
-.flexed{
+.flexed {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,14 +55,15 @@ body {
     justify-content: center;
 }
 
-.number-inputs { 
+.number-inputs {
     margin-bottom: 20px;
 
 }
 
-.string-inputs{
-    margin-top: 20px ;
+.string-inputs {
+    margin-top: 20px;
 }
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -70,7 +71,7 @@ body {
 
 .form-input {
     height: 25px;
-    width: 20rem; 
+    width: 20rem;
     border-radius: 5px;
     border: 1px solid #000000;
 }
