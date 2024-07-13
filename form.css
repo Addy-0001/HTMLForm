@@ -16,7 +16,7 @@ input[type="number"] {
 body {
     margin: 0;
     padding: 0;
-    background-color: #11235A;
+    background-color: #808080;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 }
 
 .container h1 {
-    background-color: #11235A;
+    background-color: #808080;
     color: white;
     margin: auto;
     border-radius: 5px;
@@ -77,7 +77,7 @@ body {
 }
 
 .btn-submit{
-    background-color: #11235A;
+    background-color: #000000;
     color: white;
     border: none;
     margin-block: 10px;
