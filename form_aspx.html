@@ -1,0 +1,237 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddingTheater.aspx.cs" Inherits="WebApplication.AddingTheater"
+    %>
+
+    <!DOCTYPE html>
+    <script type="text/javascript">
+        function getValue() {
+            //Get the input element
+            var input = document.getElementById("txtScreens");
+            // Get the value of the input
+            var value = input.value;
+            //Display the value
+            console.log(value); // else put an alert box at this point .
+        }
+
+    </script>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Network Circuits</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Integer Fields -->
+            <h1 class="text-center w-full">
+                Digital Network - Circuits
+            </h1>
+            <form method="post" runat="server">
+                <div class="flexed number-inputs">
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkTempSVID">Temporary SVID</label>
+                        <div>
+                            <asp:CheckBox ID="chkTempSVID" runat="server" CssClass="form-input"
+                                style="border:none; height:25px; width:20rem; border-radius:5px;" />
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCID">CID</label>
+                        <asp:TextBox ID="txtCID" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCircuit">Circuit</label>
+                        <asp:TextBox ID="txtCircuit" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtSVID">SVID</label>
+                        <asp:TextBox ID="txtSVID" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtTCDID">TCDID</label>
+                        <asp:TextBox ID="txtTDCID" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtTheatre">Theatre</label>
+                        <asp:TextBox ID="txtTheatre" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtScreens">Screens</label>
+                        <asp:TextBox ID="txtScreens" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtStreet">Street</label>
+                        <asp:TextBox ID="txtStreet" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCity">City</label>
+                        <asp:TextBox ID="txtCity" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtState">State</label>
+                        <asp:TextBox ID="txtState" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtZip">Zip</label>
+                        <asp:TextBox ID="txtZip" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtPhone">phone</label>
+                        <asp:TextBox ID="txtPhone" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtEmail">Email</label>
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCC">CC</label>
+                        <asp:TextBox ID="txtCC" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCounty">County</label>
+                        <asp:TextBox ID="txtCounty" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtDMAn">DMA#</label>
+                        <asp:TextBox ID="txtDMAn" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtDMA">DMA</label>
+                        <asp:TextBox ID="txtDMA" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtPlatformType">Platform Type</label>
+                        <asp:TextBox ID="txtPlatformType" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtNetworkType">Network Type</label>
+                        <asp:TextBox ID="txtNetworkType" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="txtLatttitude">Latitude</label>
+                        <asp:TextBox ID="txtLatttitude" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtLongitude">Longitude</label>
+                        <asp:TextBox ID="txtLongitude" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtGeoStatus">Geo Status</label>
+                        <asp:TextBox ID="txtGeoStatus" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtComments">Comments</label>
+                        <asp:TextBox ID="txtComments" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                </div>
+                <h1 class="text-center w-full">
+                    New Builds
+                </h1>
+                <div class="flexed string-inputs" style="margin-bottom: 20px;">
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkInclu">Include</label>
+                        <asp:CheckBox ID="chkInclu" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkExclu">Exclude</label>
+                        <asp:CheckBox ID="chkExclu" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkNew">New</label>
+                        <asp:CheckBox ID="chkNew" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container">
+                        <label for="txtDIGST">DIG/ANA(ST)</label>
+                        <asp:TextBox ID="txtDIGST" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtDIGLT">DIG/ANA(LT)</label>
+                        <asp:TextBox ID="txtDIGLT" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtSetUpDate">Setup Date</label>
+                        <asp:TextBox ID="txtSetUpDate" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtSortDate">Sort Date</label>
+                        <asp:TextBox ID="txtSortDate" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkhighlight">Highlight</label>
+                        <asp:CheckBox ID="chkhighlight" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container">
+                        <label for="txtNewBuildNotes">New Build Notes</label>
+                        <asp:TextBox ID="txtNewBuildNotes" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkEPS">EPS</label>
+                        <asp:CheckBox ID="chkEPS" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container">
+                        <label for="txtEPSType">EPS Type</label>
+                        <asp:TextBox ID="txtEPSType" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkLPS">LPS</label>
+                        <asp:CheckBox ID="chkLPS" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container">
+                        <label for="txtLPSType">LPS Type</label>
+                        <asp:TextBox ID="txtLPSType" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+
+
+                    <h1 class="text-center w-full">
+                        &nbsp;
+                    </h1>
+
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkSurvey">Survey</label>
+                        <asp:CheckBox ID="chkSurvey" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkPOS">POS</label>
+                        <asp:CheckBox ID="chkPOS" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkLive">Live</label>
+                        <asp:CheckBox ID="chkLive" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container" style="align-items: center; justify-content:center;">
+                        <label for="chkMod">Mod</label>
+                        <asp:CheckBox ID="chkMod" runat="server" CssClass="form-input" style="border:none" />
+                    </div>
+                    <div class="input-container">
+                        <label for="txtModType">Mod Type</label>
+                        <asp:TextBox ID="txtModType" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtModifiedDate">Mod Date</label>
+                        <asp:TextBox ID="txtModifiedDate" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtScreensRemoved">Screens Removed</label>
+                        <asp:TextBox ID="txtScreensRemoved" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtNoOfScreenRemoved">Number of Screens Removed</label>
+                        <asp:TextBox ID="txtNoOfScreenRemoved" runat="server" CssClass="form-input"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="flexed">
+                    <asp:Button ID="BtnAddTheater" runat="server" CssClass="btn-submit" OnClick="BtnAddTheater_Click"
+                        OnClientClick="getValue()" Text="ADD THEATER" />
+                </div>
+
+            </form>
+        </div>
+
+    </body>
+
+
+    </html>
