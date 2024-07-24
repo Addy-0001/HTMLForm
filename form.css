@@ -81,10 +81,24 @@ body {
     color: white;
     border: none;
     margin-block: 10px;
-    margin-inline: auto; 
     padding-inline: 10px;
     padding-block: 4px;
     border-radius: 4px;
     font-size: larger;
     font-weight: bolder;
+}
+
+.form-input-small{
+    height: 25px;
+    width: 5rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
